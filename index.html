@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Fundamentals Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <button class="scores-history" onclick="location.href='./highscores.html';">View high scores</button>
+            <h3>Time: <span class="timer">0</span></h2>
+        </div>
+    </header>
+
+    <div class="main-box">
+        <h1 class="topic">Coding Quiz Challenge</h1>
+        <p>Try to answer the following code-related questions within the time limit. </br> Keep in mind that
+            incorrect answer will penalize your score/time by ten seconds!</p>
+        <button class="start-quiz">Start Quiz</button>
+    </div>
+
+
+    <div class="quiz-container">
+        <h1 class="quiz-topic" id="quiz-quest">Quiz topic</h1>
+    </div>
+
+    <div class="quiz-option">
+        <button class="option-button" id="answer-one">answer1</button>
+        <button class="option-button" id="answer-two">answer2</button>
+        <button class="option-button" id="answer-three">answer3</button>
+        <button class="option-button" id="answer-four">answer4</button>
+    </div>
+
+    <div class="final-page">
+        <div class="total-score">
+            <h1>All Done!</h1>
+            <h3>Your final score is: <span class="final-score"></span></h3>
+        </div>
+        <div class="sumbitting">
+            <h3>Enter Initals: <input id="input-box" type="text" style="height: 40px; width: 30%; font-size: 30px;">
+                <button class="submit-button" onclick="location.href='./highscores.html';"> Submit</button>
+            </h3>
+        </div>
+    </div>
+
+    <div class="result">answer check</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
